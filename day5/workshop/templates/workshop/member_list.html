@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <br>
+    {{members}}
+    <br>
+    {% for item in members%}
+    <br>
+    <a href="{% url 'member_detail' 1 %}">{{item.title}}</a>
+    <br>
+    {% endfor %}
+    <br>
+    <hr>
+    {{members}}
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+ <h1>Django forms</h1>
+ 
+        <hr>
+ 
+        <form action="" method="POST">
+            {% csrf_token %}
+ 
+            {{form}}
+ 
+            <button type="submit">Submit</button>
+ 
+        </form>
+
+{% if messages %}
+  {% for message in messages %}
+    <p>{{ message }}</p>
+  {% endfor %}
+{% endif %}

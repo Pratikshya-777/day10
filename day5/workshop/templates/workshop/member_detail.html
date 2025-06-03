@@ -1,0 +1,10 @@
+{{members}}
+    <br>
+    {% for item in members%}
+    <br>
+    <a href="{% url 'member_detail' 1 %}">{{item.title}}</a>
+    <br>
+    {% endfor %}
+    <br>
+    <hr>
+    {{members}}
